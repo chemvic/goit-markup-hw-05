@@ -98,7 +98,8 @@ color: var(--primary-text-color);
  .site-nav .link {
    display: block;
    padding:32px 0;
-   
+  
+
    color: var(--primary-text-color);
    font-weight: 500;
       font-size: 14px;
@@ -106,9 +107,22 @@ color: var(--primary-text-color);
       letter-spacing: 0.02em;
       text-decoration: none;
    }
+    .site-nav .item{
+      position: relative;
+         }
  .site-nav .link.current {
   color: var(--accent-color);
-   }
+     }
+.link.current::after{
+   position: absolute;
+   content: "";
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: -1px;
+      background:var(--accent-color);
+      border-radius: 2px;
+}
 
  .site-nav .link:hover,
  .site-nav .link:focus {
@@ -312,6 +326,30 @@ img {
    display: block;
    max-width: 100%;
    height: auto;
+}
+.img{
+   position: relative;
+   display: flex;
+}
+.text-bord{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   width: 100%;
+   height: 70px;
+   background-color: rgba(47, 48, 58, 0.8);
+   bottom: 0;
+
+   font-family: 'Roboto';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   text-align: center;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color:var(--primary-white-color); 
 }
 
 .we-do .img:not(:last-child){
