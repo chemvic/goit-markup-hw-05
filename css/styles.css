@@ -97,7 +97,7 @@ color: var(--primary-text-color);
 }
  .site-nav .link {
    display: block;
-   padding:32px 0;
+   padding:32px 3px;
   
 
    color: var(--primary-text-color);
@@ -145,7 +145,6 @@ font-weight: 500;
    letter-spacing: 0.02em;
    text-decoration: none;
    display: flex;
-   /* padding: 32px 0; */
    align-items: center;
  }
  .contacts .link:hover,
@@ -559,9 +558,39 @@ margin-right: 8px;
 }
 .services{
     text-decoration: none;
+   }
+.cart{
+position: relative;
+overflow: hidden;
+content: "";
+transition: transform 250ms;
 }
-.cart:hover,
-.cart:focus{
+
+.cart-text{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 63px 24px;
+   background-color :rgba(33, 150, 243, 0.9);
+   min-width: 100%;
+   height: auto;
+
+   font-family: 'Roboto';
+   font-weight: 400;
+   font-size: 18px;
+   line-height:1.56;
+   letter-spacing: 0.03em;
+   color:var(--primary-white-color);
+   transform: translateY(100%);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+   .cart:hover {
+   transform: translateY(0);
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+   .cart:focus .cart-text{
+   transform: translateY(0);
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
