@@ -539,11 +539,7 @@ text-align: center;
   border-radius: 4px;
 padding: 6px 22px;
 border: 0;
-transition-property: background-color;
-transition-property: color;
-/* transition-property:box-shadow; */
-transition-duration: 1250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .button-all{
 padding: 6px 25px;
@@ -556,11 +552,7 @@ font-family: inherit;
 text-align: center;
 border-radius: 4px;
 border: 0;
-transition-property: background-color;
-transition-property: color;
-/* transition-property: box-shadow; */
-transition-duration: 1250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 1250ms cubic-bezier(0.4, 0, 0.2, 1), color 1250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-all:hover,
 .button-all:focus,
