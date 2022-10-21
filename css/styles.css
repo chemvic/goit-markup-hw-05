@@ -685,13 +685,12 @@ transform: translate(-50%, -50%) scale(0.9);
    top: 50%;
    left: 50%;
    transform: translate(-50%,-50%) scale(1);
-   padding: 8px;
-   }
+     }
 .close-button{
    position: absolute;
    display: flex;
-      align-items: center;
-      justify-content: center;
+   align-items: center;
+   justify-content: center;
    top: 8px;
    right: 8px;
    padding: 0;
@@ -701,15 +700,7 @@ transform: translate(-50%, -50%) scale(0.9);
    border-radius: 50%;
    width: 30px;
    height: 30px;
-background-color: #fff;
-background-image: url("./images/icons.svg#icon-close-black");
+   background-color: #fff;
    }
-  /* .close-button::before{
-   width: 18px;
-   height: 18px;
-   contain: "";
-   display: flex;
-   align-items: center;
-justify-content: center;
- /* padding: 5px 4px 6px 4px; */
+ 
   
